@@ -65,20 +65,8 @@ from pydantic import BaseModel
 from IPython.display import display
 
 # Local Module Imports
-from modules.vit import load_model_vit, morgan_to_image
-from modules.stackRNN import StackAugmentedRNN
-from modules.data import GeneratorData
-from modules.predictor import QSAR
-from modules.chembert import RoBERTaForMaskedLM, chemberta_predict
-from modules.docking import (
-    download_pdb_and_ligand,
-    convert_ligand_to_pdbqt,
-    run_plif_and_visualize,
-    add_hydrogens_to_protein
-)
-from modules.predict import predict_smiles
-from helper import identity, dice_coef, dice_loss
-from io import BytesIO
+from vit import load_model_vit, morgan_to_image
+
 import sqlite3
 import json
 from datetime import datetime
