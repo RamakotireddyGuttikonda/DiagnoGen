@@ -90,6 +90,6 @@ def predict(data: InputData):
         raise HTTPException(status_code=500, detail=f"Internal server error: {e}")
     
 
-if __name__ == '__server__':
+if __name__ == '__main__':
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
