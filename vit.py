@@ -98,7 +98,7 @@ def load_model_vit(path):
     model = ViT(**model_data["model_config"])
     
     # Load state dict from pth file
-    model.load_state_dict(torch.load("C:\\Users\\gr166\\OneDrive\\Desktop\\ps-1\\backend\\modules\\vit_model.pth", map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load("vit_model.pth", map_location=torch.device('cpu')))
     model.eval()
     
     return model, model_data["label_encoder"]
